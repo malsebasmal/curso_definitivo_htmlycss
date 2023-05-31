@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MobileFirst and Responsive Design</title>
+
+    <!-- CSS base -->
+    <link rel="stylesheet" href="/styles/base-mobile.css">
+
+    <!-- Enlazar todos los archivos CSS con las distintas medidas para cada dispositivo -->
+    <link rel="stylesheet" href="styles/tablet.css" media="screen (min-width: medida)">
+    <link rel="stylesheet" href="styles/desktop.css" media="screen (min-width: medida)">
 </head>
 <body>
     <p>
@@ -52,7 +59,7 @@
             -Todo el código en un mismo archivo CSS
             <br>
             -Usar distintos archivos CSS, colocando los links en el <head/> de la siguiente manera:
-                (Arriba en el <head/> de el archivo index.html)
+                (Arriba en el <head/>)
     </p>
 
     <a href="/index.html">principal</a>
