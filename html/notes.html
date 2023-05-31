@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MobileFirst and Responsive Design</title>
+</head>
+<body>
+    <p>
+        Mobile first and Responsive design:
+        <br>
+    <br>
+            Ambas formas/conceptos sirven para crear código que se pueda adaptar a los distintos tipos de resoluciones que existen en los distintos tipos de dispositivos. Es crear páginas webs que se adapten completamente a cualquier dispositivo sin importar su tamaño. 
+            <br>
+        Comprendido esto, tenemos que tener en cuenta 2 conceptos:
+        <br>
+        <br>
+        -Breakpoints:
+            <br>
+                Estos "breakpoints" no son más que tamaños específicos que indicamos a los "Media Queries" donde dentro de estos pondremos cierto código que se ejecutara una vez el tamaño indicado en el breakpoint sea el que muestre en la pantalla del usuario. Por ejemplo:
+                <br>
+                    @media (max-width: 768px) {
+                        Código que se aplicara cuando la pantalla tenga la resolución indicada
+                    }
+                    <br>
+                En este caso le estamos indicando al navegador que cuando la página tenga el tamaño máximo de 786px aplicara los cambios.
+                <br>
+                <br>
+            -Media Queries:
+            <br>
+                Las media queries son una característica de CSS que permite aplicar estilos diferentes según ciertas características del dispositivo o de la pantalla. Las media queries se utilizan junto con los breakpoints para adaptar el diseño en diferentes situaciones. Por ejemplo:
+                <br>
+                @media (max-width: 768px) {
+                    Estilos aplicados cuando el ancho de la pantalla es menor o igual a 768px
+                }
+                <br><br><br>
+        Entendido esos 2 conceptos, tenemos que entender la diferencia entre Mobile First y Responsive Design:
+        <br><br>
+            -Mobile First:
+            <br>
+                Como su nombre lo indica, esta manera de escribir código adaptable a distintos tamaños de resoluciones para los distintos dispositivos funciona EMPEZANDO por DESARROLLAR PRIMERO (first) la página web para un CELULAR (Mobile). Luego se va escalando sucesivamente en las distintas resoluciones de dispositivos más grandes hasta llegar a Desktop (pc) la cual sería la más grande.
+                <br>
+                Es decir de pequeño a más grande.
+                <br><br>
+            -Responsive Design:
+            <br>
+                En Responsive Design se empieza al contrario. Desde lo más grande hasta ir adaptando el código a los dispositivos más pequeños.
+                <br>
+        Entendido las diferencias, por último comprenderemos la cual es la mejor manera para implementar cualquiera de las 2 formas para hacer una página adaptable a las distintas resoluciones.
+        <br>
+            -Todo el código en un mismo archivo CSS
+            <br>
+            -Usar distintos archivos CSS, colocando los links en el <head/> de la siguiente manera:
+                (Arriba en el <head/> de el archivo index.html)
+    </p>
+
+    <a href="/index.html">principal</a>
+</body>
+</html>
