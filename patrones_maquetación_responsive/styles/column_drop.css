@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.div__1, .div__2, .div__3, .div__4, .div__5 {
+    width: 100%;
+    min-width: 15rem;
+    height: 15rem;
+}
+
+.div__1 {
+    background-color: blue;
+}
+
+.div__2 {
+    background-color: black;
+}
+
+.div__3 {
+    background-color: aqua;
+}
+
+.div__4 {
+    background-color: violet;
+}
+
+.div__5 {
+    background-color: brown;
+}
