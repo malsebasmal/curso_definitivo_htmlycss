@@ -38,3 +38,52 @@ html {
 .div__5 {
     background-color: brown;
 }
+
+@media screen and (min-width: 600px) {
+    .div__1 {
+        width: 25%;
+        order: 1;
+    }
+
+    .div__2 {
+        width: 75%;
+        order: 2;
+    }
+
+    .div__3 {
+        width: 100%;
+        order: 3;
+    }
+
+    .div__4 {
+        width: 100%;
+        order: 4;
+    }
+
+    .div__5 {
+        width: 100%;
+        order: 5;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .div__1 {
+        width: 30%;
+    }
+
+    .div__2 {
+        width: 40%;
+    }
+
+    .div__3 {
+        width: 30%;
+    }
+
+    .div__4 {
+        width: 50%;
+    }
+
+    .div__5 {
+        width: 50%;
+    }
+}
