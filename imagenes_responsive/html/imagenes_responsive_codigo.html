@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes Responsive</title>
+</head>
+<body>
+    <main>
+        <picture> 
+            <!-- La etiqueta Source* sirve para almacenar imágenes/videos de distintos tamaños. Esto con el fin de que el navegador decida (dependiendo del tamaño de la pantalla) cual imagen mostrar -->
+            <!-- El @media dentro de la etiqueta de Source*, delimitará (dependiendo de nuestro breakpoint) en que momento cargara una u otra imagen -->
+            <source media="(min-width: 320px)" srcset="Ruta de la imagen con distinto tamaño">
+            <source media="(min-width: 400px)" srcset="Ruta de la imagen con distinto tamaño">
+            
+            <!-- La etiqueta Img* la usaremos para mostrar la imagen principal, para nuestro código principal (Es decir en la resolución en la que creamos la página) -->
+            <img src="" alt="">
+        </picture>
+    </main>
+</body>
+</html>
